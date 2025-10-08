@@ -30,10 +30,9 @@ export default function SearchResults({ papers, loading, onSelectPaper, selected
       </div>
       {papers.map((paper) => (
         <PaperCard
-          key={paper.corpusid}
-          paper={paper}
-          onSelect={onSelectPaper}
-          isSelected={selectedPaper?.corpusid === paper.corpusid}
+        key={paper.corpusid}
+        paper={paper}
+        rank={index + 1}
         />
       ))}
     </div>
