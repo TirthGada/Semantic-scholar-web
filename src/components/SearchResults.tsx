@@ -28,7 +28,7 @@ export default function SearchResults({ papers, loading, onSelectPaper, selected
       <div className="text-sm text-gray-600 mb-4">
         Found {papers.length} papers
       </div>
-      {papers.map((paper) => (
+      {papers.map((paper,index) => (
         <PaperCard
         key={paper.corpusid}
         paper={paper}
