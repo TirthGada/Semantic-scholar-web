@@ -74,7 +74,7 @@ export async function searchByEmbeddingVectorOnly(
       _cosine_score: cosine(queryNorm, normalize(d._source.embedding)),
     }))
     .filter((s: { _cosine_score: number }) => s._cosine_score >= minCosine)
-    .sort((a, b) => b._cosine_score - a._cosine_score)
+    .sort((a: { _cosine_score: number }, b: { _cosine_score: number }) => b._cosine_score - a._cosine_score)
     .slice(0, topK);
 
   return scored;
