@@ -35,7 +35,7 @@ export function cosine(a: number[], b: number[]): number {
 // ---------- Vector-Only KNN Search ----------
 export async function searchByEmbeddingVectorOnly(
   embedding: number[],
-  topK = 10,
+  topK = 100,
   minCosine = 0.0,
   candidatePool = 5000
 ) {

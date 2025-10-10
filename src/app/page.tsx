@@ -47,8 +47,6 @@ export default function Home() {
           <h1 className="text-4xl font-bold text-gray-900 mb-1">VERITUS</h1>
           <p className="text-gray-600 text-lg mb-1">Academic Paper Search</p>
           <div className="flex items-center justify-center gap-2 text-gray-500 text-sm">
-            <Database className="w-4 h-4" />
-            <span>100M+ Papers</span>
           </div>
         </header>
 
